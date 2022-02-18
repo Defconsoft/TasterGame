@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class FPS_Movement : MonoBehaviour
 {
@@ -29,6 +30,7 @@ public class FPS_Movement : MonoBehaviour
             Jump();
         } 
         Cursor.lockState = CursorLockMode.Locked;
+        
     }
     void Move()
     {

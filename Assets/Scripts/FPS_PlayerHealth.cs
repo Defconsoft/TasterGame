@@ -8,6 +8,8 @@ public class FPS_PlayerHealth : MonoBehaviour
 {
     public float playerHealth = 100f;
     public Slider healthSlider;
+    public Text scoreText;
+    public int score = 0;
     void Update()
     {
         healthSlider.value = playerHealth;
@@ -19,6 +21,7 @@ public class FPS_PlayerHealth : MonoBehaviour
         {
             GameOver();
         }
+        scoreText.text = score.ToString();
     }
 
     void GameOver()
