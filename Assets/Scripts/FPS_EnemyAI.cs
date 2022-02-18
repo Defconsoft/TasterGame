@@ -7,6 +7,7 @@ public class FPS_EnemyAI : MonoBehaviour
 {
 
     private GameObject player;
+    public GameObject PickUpPf;
     public GameObject deathEffect, attackEffect;
     private NavMeshAgent agent;
     public float attackDistance, damageAmount;
@@ -43,6 +44,8 @@ public class FPS_EnemyAI : MonoBehaviour
         Destroy (agent);
         Destroy (this.GetComponent<CapsuleCollider>());
         deathEffect.SetActive (true);
+        GameObject pickup = Instantiate (PickUpPf, transform);
+        pickup.transform.parent = null;
         Destroy (tempModel);
         yield return new WaitForSeconds(6f);
         Destroy(this.gameObject);

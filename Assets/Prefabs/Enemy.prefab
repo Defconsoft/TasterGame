@@ -83,6 +83,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d766e6e530a8cd4c9fb7ed02d59d195, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PickUpPf: {fileID: 3711880296366785346, guid: 5bf606eba606fd44ca6a56c2c08a1416, type: 3}
   deathEffect: {fileID: 3840983305345442722}
   attackEffect: {fileID: 5581293623828702397}
   attackDistance: 2.5
