@@ -144,6 +144,7 @@ GameObject:
   - component: {fileID: 597602488774575780}
   - component: {fileID: 597602488774575779}
   - component: {fileID: 597602488774575778}
+  - component: {fileID: 1983182007}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -264,6 +265,20 @@ MonoBehaviour:
   jumpHeight: 2
   lookSpeed: 5
   cam: {fileID: 597602489433517959}
+--- !u!114 &1983182007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 597602488774575777}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd3cae1def016ed479401042e8876c3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerHealth: 10
+  healthSlider: {fileID: 0}
 --- !u!1 &597602489433517957
 GameObject:
   m_ObjectHideFlags: 0
@@ -361,6 +376,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firePoint: {fileID: 1180430658}
+  deathParticle: {fileID: 0}
   gunRange: 100
   timeBetweenShots: 0
 --- !u!1001 &597602489982969047
