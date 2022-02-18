@@ -5,6 +5,7 @@ using UnityEngine;
 public class FPS_Gun : MonoBehaviour
 {
     public GameObject firePoint;
+    public GameObject deathParticle;
     [SerializeField] float gunRange, timeBetweenShots;
     float nextFire;
     void Update()
@@ -21,14 +22,15 @@ public class FPS_Gun : MonoBehaviour
 ;
         if(Physics.Raycast(firePoint.transform.position, firePoint.transform.forward, out hit, gunRange))
         {
-            Debug.Log(hit.transform.name);
+            
             if(hit.rigidbody != null)
             {
                 hit.rigidbody.AddForce(-hit.normal * 300);
             }
             if(hit.transform.tag == "Enemy")
             {
-                Destroy(hit.transform, 0.1f);
+                Debug.Log ("KILL");
+                StartCoroutine(hit.transform.gameObject.GetComponent<FPS_EnemyAI>().Death());
             }
         }
     }
