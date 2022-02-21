@@ -96,6 +96,7 @@ GameObject:
   - component: {fileID: 6181808416106077980}
   - component: {fileID: 8996243370819749847}
   - component: {fileID: 412033662}
+  - component: {fileID: 2096382484102933440}
   m_Layer: 0
   m_Name: Pickup
   m_TagString: Untagged
@@ -159,7 +160,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2cf8d70ed29db34283747c69ae1a8e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreText: {fileID: 0}
+  scoreNum: 0
 --- !u!65 &8996243370819749847
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -186,3 +187,15 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.5497082, z: 1}
   m_Center: {x: 0, y: 0.3922263, z: 0}
+--- !u!114 &2096382484102933440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3711880296366785346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da67c96005e01744eaacd682b342e531, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
